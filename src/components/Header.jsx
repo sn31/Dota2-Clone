@@ -1,9 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import NavBar from './NavBar';
+import Authentication from './Authentication';
+import Language from './Language';
+import Download from './Download';
+
 function Header() {
   return (
     <div>
-      <p>Something</p>
+      <NavBar/>
+      <Authentication/>
+      <Language/>
+      <Download/>
       </div>
   )
 }
