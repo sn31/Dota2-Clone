@@ -1,10 +1,14 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import logoSmall from '../assets/images/logoS.png'
+import React from "react";
+import { Link } from "react-router-dom";
+import logoSmall from "../assets/images/logoS.png";
+import Authentication from './Authentication';
+import Language from './Language';
+import Download from './Download';
+
 function NavBar() {
-  return (
-    <ul>
-      <style jsx>{`
+  return(
+  <div>
+       <style jsx>{`
         ul {
           list-style-type: none;
           padding-left: 0;
@@ -16,13 +20,31 @@ function NavBar() {
           float: left;
           margin-right: 1em;
         },
+       div {
+           margin-bottom: 3em;
+       }
         `}</style>
-      <li><Link to="/"><img src={logoSmall}/></Link></li>
-      <li><Link to="/news">News</Link></li>
-      <li><Link to="/store">Store</Link></li>
-      <li><Link to="/heropedia">Heropedia</Link></li>
+    <ul>
+      <li>
+        <Link to="/">
+          <img src={logoSmall} />
+        </Link>
+      </li>
+      <li>
+        <Link to="/news">News</Link>
+      </li>
+      <li>
+        <Link to="/store">Store</Link>
+      </li>
+      <li>
+        <Link to="/heropedia">Heropedia</Link>
+      </li>
+      <li><Authentication/></li>
+      <li><Language/></li>
+      <li><Download/></li>
     </ul>
+  </div>
   )
 }
 
-export default NavBar
+export default NavBar;
