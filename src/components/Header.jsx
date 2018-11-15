@@ -1,13 +1,15 @@
 import React from 'react'
 import NavBar from './NavBar'
-import Authentication from './Authentication'
-import Language from './Language'
-import Download from './Download'
 
 function Header() {
   return (
-    <div style={{backgroundColor:'rgb(153, 153, 153)'
-    }}>
+    <div>
+      <style jsx>{`
+        div {
+          background-color: #2a2a2b;
+          height: 5em;
+        }
+        `}</style>
       <NavBar/>
     </div>
   )

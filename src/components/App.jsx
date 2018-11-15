@@ -5,7 +5,7 @@ import Welcome from './Welcome'
 
 function App() {
   return (
-    <div>
+    <div style={{margin: '-10px',padding: '0'}}>
       <Header />
       <Welcome/>
       <Switch>
