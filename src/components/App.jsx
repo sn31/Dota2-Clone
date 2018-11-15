@@ -1,12 +1,13 @@
 import React from 'react'
 import Header from './Header'
 import {Switch, Route} from 'react-router-dom'
-
+import Welcome from './Welcome'
 
 function App() {
   return (
     <div>
       <Header />
+      <Welcome/>
       <Switch>
         {/* <Route exact path='/' component={TicketList} />
         <Route exact path='/newticket' component={NewTicketForm} /> */}

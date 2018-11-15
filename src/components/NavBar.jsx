@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-
+import logoSmall from '../assets/images/logoS.png'
 function NavBar() {
   return (
     <ul>
@@ -17,7 +17,7 @@ function NavBar() {
           margin-right: 1em;
         },
         `}</style>
-      <li><Link to="/"><img src="http://cdn.dota2.com/apps/dota2/images/nav/logo.png"/></Link></li>
+      <li><Link to="/"><img src={logoSmall}/></Link></li>
       <li><Link to="/news">News</Link></li>
       <li><Link to="/store">Store</Link></li>
       <li><Link to="/heropedia">Heropedia</Link></li>
