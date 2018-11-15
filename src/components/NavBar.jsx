@@ -7,7 +7,7 @@ import Download from './Download'
 
 function NavBar() {
   return (
-    <div>
+    <div style={{marginLeft:'12em', marginRight:'auto'}}>
       <style jsx>{`
         ul {
           list-style-type: none;
