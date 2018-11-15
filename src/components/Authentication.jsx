@@ -2,7 +2,9 @@ import React from 'react'
 
 function Authentication() {
   return (
-    <a href="https://steamcommunity.com/oauth/login?" style={{color:'white', textDecoration:'none'}}>Login/Signup</a>
+    <div style={{fontSize: '0.5em', marginTop: '1em', marginLeft:'3em'}}>
+    <a href="https://steamcommunity.com/oauth/login?" style={{color:'white', textDecoration:'none'}}>Login</a>
+    </div>
   )
 }
 
